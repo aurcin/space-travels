@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-size: 14px;
+
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 120%;
+}
+
+.canvas {
+  width: 100vw;
+  height: 100vh;
+
+  object-fit: cover;
+  object-position: top left;
+}
+
+.content {
+  position: absolute;
+
+  top: 50%;
+  right: 50%;
+  width: calc(100vw - 20px);
+  transform: translate(50%, -50%);
+
+  padding: 1em;
+
+  background-color: rgba(17, 8, 25, 0.85);
+  color: #d8c29a;
+  border-radius: 8px;
+}
+
+.title {
+  color: #e6b864;
+  line-height: 120%;
+}
+
+.text {
+  margin-block: 0.5em;
+}
+
+.steps {
+  margin-left: 1em;
+}
+
+.steps li {
+  margin-bottom: 0.5em;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  .content {
+    width: 500px;
+    right: 2em;
+    transform: translate(0%, -50%);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
+  .content {
+    width: 700px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    font-size: 20px;
+  }
+
+  .content {
+    width: 900px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    line-height: 150%;
+  }
+
+  .steps li {
+    margin-bottom: 1em;
+  }
+}
